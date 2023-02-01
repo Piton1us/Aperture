@@ -83,8 +83,9 @@ body{
 }
 
 .title{
-   font-size: 30px;
-   line-height: 25px;
+   font-size: 36pt;
+   line-height: 30px;
+   
 }
 
 .do__body{
@@ -93,6 +94,7 @@ body{
    justify-content: center;
    align-items: center;
    text-align: center;
+   margin-bottom: 80px;
 
    .do__cards{
       display: grid;
@@ -125,24 +127,7 @@ body{
       padding: 15px 0 15px 0;
    }
 
-   .item-do__button{
-      display: flex;
-      text-align: center;
-      justify-content: space-around;
-      align-items: center;
-      width: 142px;
-      height: 42px;
-      border-radius: 14px;
-      border: none;
-      cursor: pointer;
-      &:hover{
-         background-color: #000000;
-         color: #FFF;
-         transition: all .4s;
-         border: solid 2px #FFF;
-      }
-      
-   }
+
 
    .circle{
       // margin: 0 15px 0 0px;
@@ -154,7 +139,33 @@ body{
    }
 }
 
+.item-do__button{
+   display: flex;
+   text-align: center;
+   justify-content: space-around;
+   align-items: center;
+   width: 142px;
+   height: 42px;
+   border-radius: 14px;
+   border: none;
+   cursor: pointer;
+   &:hover{
+      background-color: #000000;
+      color: #FFF;
+      transition: all .4s;
+      border: solid 2px #FFF;
+   }
+   
+}
 
+.circle{
+   // margin: 0 15px 0 0px;
+   background-color: #000000;
+   border-radius: 30px;
+   width: 31px;
+   height: 32px;
+   
+}
 
 .first{
    background-image: url(../img/1-card.png);
@@ -170,4 +181,182 @@ body{
 
 .fourth{
    background-image: url(../img/4-card.png);
+}
+
+.fuji{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items:flex-end;
+   
+   background-image: url(../img/fuji.png);
+   height: 600px;
+
+}
+
+.fuji__title{
+   display: flex;
+   letter-spacing: 2px;
+   margin: 40px 140px 7px 0 ;
+}
+
+.fuji__text{
+   margin-right: 50px;
+}
+
+.tools{
+   display: grid;
+   grid-template-columns: 50% 50%;
+   align-items: center;
+   height: 540px;
+
+   .tools__description{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+      padding: 0 0 0 100px;
+        
+}
+   .tools__image{
+      background-image: url(../img/tools.png);
+      height: 540px;
+   }
+
+   .item-tools__subtitle{
+      letter-spacing: 2px;
+      font-weight: 100;
+   }
+   .item-tools__title{
+      letter-spacing: 2px;
+      font-size: 28pt;
+   }
+   
+   .item-tools__button{
+      background-color: #fff;
+      color: #000000;
+      width: 152px;
+      letter-spacing: 0.4px;
+      font-size: 12pt;
+      padding-right: 7px;
+      margin-top: 10px;
+      &:hover{
+         background-color: #000000;
+         color: #FFF;
+         transition: all .3s;
+         border: solid 1px #FFF;
+      }
+   }
+
+
+}
+
+.leafs{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items:flex-end;
+   
+   background-image: url(../img/leafs.png);
+   height: 600px;
+}
+
+.clients{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 500px;
+   
+   .clients__title{
+      font-size: 40pt;
+   }
+   .clients__subtitle{
+      font-size: 24pt;
+   }
+
+   .clients__box{
+      width: 100%;
+      height: 158px;
+      padding-top: 60px;  
+      display: flex;
+      justify-content:space-around;
+      align-items: center;
+   }
+
+   img{
+      object-fit: contain;
+   }
+}
+
+.mountain{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items:flex-end;
+   
+   background-image: url(../img/mountain.png);
+   height: 600px;
+
+   .fix{
+      margin: 0 0 0  20px !important;
+   }
+}
+
+.help{
+   display: flex;
+   flex-direction: column;
+   justify-content:center ;
+   align-items: center;
+   height: 410px;
+   text-align: center;
+
+.help__button{
+      background-color: #fff;
+      color: #000000;
+      width: 152px;
+      letter-spacing: 0.4px;
+      font-size: 12pt;
+      padding-right: 7px;
+      margin-top: 10px;
+      &:hover{
+         background-color: #000000;
+         color: #FFF;
+         transition: all .3s;
+         border: solid 1px #FFF;
+      }
+}
+
+.help__title{
+   font-size: 34pt;
+
+}
+.help__subtitle{
+   font-size: 18pt;
+   margin: 15px 0;
+
+}
+
+}
+
+@media(max-width:375px) {
+   .do__cards{
+      grid-template-columns: 100% !important;
+   }
+
+   .item-do__cards{
+      width: 100% !important;
+      background-position: center center;
+   }
+
+   .tools__description{
+      padding: 0 !important;
+   }
+   
+   .clients__box{
+      flex-direction: column !important;
+      img{
+         margin: 10px 0;
+      }
+   }
 }
